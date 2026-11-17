@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Empréstimos de Equipamentos Escolares</title>
+  <link rel="stylesheet" href="static/css/estilo.css">
+</head>
+<body>
+  <div class="app">
+
+    <aside class="menu">
+      <div class="marca">
+        <span class="marca-icone">EE</span>
+        <div>
+          <strong>Empréstimos</strong>
+          <small>Equipamentos escolares</small>
+        </div>
+      </div>
+      <nav id="navegacao">
+        <a href="#painel" data-visao="painel">Painel</a>
+        <a href="#equipamentos" data-visao="equipamentos">Equipamentos</a>
+        <a href="#emprestimos" data-visao="emprestimos">Empréstimos</a>
+        <a href="#usuarios" data-visao="usuarios">Usuários</a>
+        <a href="#manutencoes" data-visao="manutencoes">Manutenções</a>
+      </nav>
+      <p class="menu-rodape">Projeto Integrado<br>DWS · POO · BD</p>
+    </aside>
+
+    <main class="conteudo">
+      <header class="topo">
+        <div>
+          <h1 id="titulo"></h1>
+          <p id="subtitulo"></p>
+        </div>
+        <button class="botao" id="botao-acao" type="button"></button>
+      </header>
+      <div id="visao"></div>
+    </main>
+
+  </div>
+
+  <dialog id="modal"></dialog>
+  <div id="avisos" aria-live="polite"></div>
+
+  <script src="static/js/app.js"></script>
+</body>
+</html>
